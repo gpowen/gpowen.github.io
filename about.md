@@ -8,7 +8,7 @@ I am a first year Master's student studying Social Data Analytics and Research. 
 
 ### More Information
 
-I like computers, video games, k-pop and anime. 
+Blank for now!
 
 ### Contact me
 
