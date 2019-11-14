@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a first year Master's student studying Social Data Analytics and Research. I graduated cum laude from The University of Texas at Dallas in 2019 with a BA in Sociology. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I like computers, video games, k-pop and anime. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[g9.owen@gmail.com](mailto:g9.owen@gmail.com)
