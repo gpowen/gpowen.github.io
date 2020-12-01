@@ -9,7 +9,9 @@ Ideally would use Shiny here!
 
 ### Visualizations
 
-![alt text here](SNSDGenieCloud.png)
+Girls' Generation - 'Genie' (2010) Word Cloud
+<br><br>
+![alt text here](images/SNSDGenieCloud.png)
 
 
 ### Code
