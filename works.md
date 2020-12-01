@@ -38,7 +38,7 @@ corpus <- Corpus(VectorSource(corpus))
 
 ## Clean text; make lowercase, punctuation, numbers, finally cleaned set
 
-inspect(corpus[1:5]) ## for verification
+inspect(corpus[1:5]) # For verification
 
 corpus <- tm_map(corpus, tolower)
 
@@ -57,7 +57,7 @@ cleanset <- tm_map(cleanset, stripWhitespace)
 
 tdm <- TermDocumentMatrix(cleanset)
 m <- as.matrix(tdm)
-v <- sort(rowSums(m),decreasing=TRUE) ## memory hangups can occur here if comments are excessive
+v <- sort(rowSums(m),decreasing=TRUE) # Memory hangups can occur here if comments are excessive
 d <- data.frame(word = names(v), freq=v)
 head(d, 50)
 
@@ -73,7 +73,7 @@ wordcloud (words=d$word, freq = d$freq, min.freq = 1,
 star <- d ## LOONA Star
 genie <- d ## SNSD Genie
 
-star <- d %>% slice(1:20) ## cuts observations down to 20
+star <- d %>% slice(1:20) # Cuts observations down to 20
 genie <- d %>% slice(1:20) 
 
 ## Bar graph ggplot2
@@ -82,7 +82,7 @@ plot1 <- ggplot(genie, aes(x=word, y=freq)) + geom_bar(stat='identity') + labs(t
 
 bluesnew <- brewer.pal(9, "Blues")
 bluesnew <- colorRampPalette(bluesnew)(20)
-bluesnew ## lists all hexcodes 
+bluesnew # Lists all hexcodes 
 
 plot1 <- ggplot(genie, aes(x=reorder(word, -freq), y=freq)) + geom_bar(stat='identity', aes(fill = as.factor(freq))) + labs(title="LOONA - 'Star': Top 20 Keywords") +
   xlab("Keyword") +
@@ -90,7 +90,7 @@ plot1 <- ggplot(genie, aes(x=reorder(word, -freq), y=freq)) + geom_bar(stat='ide
   theme(legend.position="none") +
   scale_fill_manual(values=c("#F7FBFF", "#ECF4FB", "#E1EDF8", "#D7E6F4", "#CDE0F1", "#C1D9ED", "#B0D2E7", "#A0CAE1", "#8BBFDC", "#75B3D8", "#62A8D2", "#519CCB", "#4090C5", "#3282BD", "#2474B6", "#1966AD", "#0E59A2", "#084B94", "#083D7F", "#08306B"))
 
-print(plot1) ## Final plot
+print(plot1) # Final plot
 ```
 
 
