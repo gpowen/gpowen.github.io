@@ -4,7 +4,14 @@ title: Works
 permalink: /works/
 ---
 
-Class projects / works here later.
+### Data Visualization Project
+Ideally would use Shiny here (as seen below, Assignment 7). For now: 
+
+
+
+
+
+
 
 ### Assignment 7
 Publishing test Shiny applications to GitHub:
