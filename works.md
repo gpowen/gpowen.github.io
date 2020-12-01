@@ -114,8 +114,7 @@ plot1 <- ggplot(genie, aes(x=reorder(word, -freq), y=freq)) + geom_bar(stat='ide
 print(plot1) # Final plot
 ```
 
-
-### Assignment 7
+# Assignment 7
 Publishing test Shiny applications to GitHub:
 
 <iframe width="1000" height="475" src="https://gpowen.shinyapps.io/Shiny03_BaseDataset/"></iframe>
