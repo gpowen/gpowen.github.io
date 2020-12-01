@@ -7,7 +7,7 @@ permalink: /works/
 ### Data Visualization Final Project
 Ideally would use Shiny here (as seen below, Assignment 7). For now, the raw code and outputs:
 
-```ruby
+```r
 rm(list = ls())
 getwd()
 gc()
