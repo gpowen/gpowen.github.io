@@ -4,24 +4,25 @@ title: Works
 permalink: /works/
 ---
 
-### Data Visualization Final Project
+# Data Visualization Final Project
 Ideally would use Shiny here (as seen below, Assignment 7)!
 
-### Visualizations
+## Visualizations
+All visualizations depict the most used keywords taken from YouTube comment sections. 
 
-Girls' Generation - 'Genie' (2010) Word Cloud
+### Girls' Generation - 'Genie' (2010) Word Cloud
 <br><br>
 ![alt text here](images/SNSDGenieCloud.png)
 
-Girls' Generation - 'Genie' (2010) Bar Chart
+### Girls' Generation - 'Genie' (2010) Bar Chart
 <br><br>
 ![alt text here](images/SNSDGenieBar.png)
 
-LOONA - 'Star' (2020) Word Cloud
+### LOONA - 'Star' (2020) Word Cloud
 <br><br>
 ![alt text here](images/LoonaStarCloud.png)
 
-LOONA - 'Star' (2020) Bar Chart
+### LOONA - 'Star' (2020) Bar Chart
 <br><br>
 ![alt text here](images/LoonaStarBar.png)
 
