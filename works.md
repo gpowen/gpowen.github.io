@@ -25,7 +25,7 @@ theme_set(theme_pubr())
 
 ## Authentication
 
-yt_oauth("ID here", "secret ID here") # 
+yt_oauth("ID here", "secret ID here")
 
 ## Get comments for a single video
 
