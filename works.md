@@ -5,7 +5,7 @@ permalink: /works/
 ---
 
 ### Data Visualization Final Project
-Ideally would use Shiny here!
+Ideally would use Shiny here (as seen below, Assignment 7)!
 
 ### Visualizations
 
@@ -13,6 +13,17 @@ Girls' Generation - 'Genie' (2010) Word Cloud
 <br><br>
 ![alt text here](images/SNSDGenieCloud.png)
 
+Girls' Generation - 'Genie' (2010) Bar Chart
+<br><br>
+![alt text here](images/SNSDGenieBar.png)
+
+LOONA - 'Star' (2020) Word Cloud
+<br><br>
+![alt text here](images/LoonaStarCloud.png)
+
+LOONA - 'Star' (2020) Bar Chart
+<br><br>
+![alt text here](images/LoonaStarBar.png)
 
 ### Code
 
