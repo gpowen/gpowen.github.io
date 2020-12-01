@@ -9,7 +9,7 @@ Ideally would use Shiny here!
 
 ### Visualizations
 
-!Girls' Generation Wordcloud: 
+![alt text here](SNSDGenieCloud.png)
 
 
 ### Code
