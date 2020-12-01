@@ -9,6 +9,8 @@ Ideally would use Shiny here!
 
 ### Visualizations
 
+!Girls' Generation Wordcloud: 
+
 
 ### Code
 
