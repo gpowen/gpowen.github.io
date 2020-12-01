@@ -4,7 +4,7 @@ title: Works
 permalink: /works/
 ---
 
-### Data Visualization Project
+### Data Visualization Final Project
 Ideally would use Shiny here (as seen below, Assignment 7). For now, the raw code and outputs:
 
 ```
