@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data Visualization Final Project
-permalink: /DVFinal/
+permalink: datavisualization/DVFinal/
 ---
 
 ## Visualizations
