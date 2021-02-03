@@ -1,4 +1,8 @@
-# Data Visualization Final Project
+---
+layout: page
+title: Data Visualization Final Project
+permalink: /DVFinal/
+---
 
 ## Visualizations
 All visualizations depict the most used keywords taken from YouTube comment sections. 
