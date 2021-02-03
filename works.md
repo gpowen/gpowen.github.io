@@ -9,5 +9,3 @@ permalink: /works/
 [Data Visualization: Working with Shiny](DVA7.md)
 
 [Lab 1: Markdown Introduction](Lab01.html)
-
-<a href="Lab01.html">Lab 1 (HTML Link)</a>
