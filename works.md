@@ -4,6 +4,6 @@ title: Works
 permalink: /works/
 ---
 
-[Data Visualization: Final Project (Working with YouTube Data and Tuber)](DVFinal.md)
+[Data Visualization: YouTube Data and Tuber Final Project](DVFinal.md)
 
-[Data Visualization: Assignment 7 (Working with Shiny)](DVA7.md)
+[Data Visualization: Working with Shiny](DVA7.md)
