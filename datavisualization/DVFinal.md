@@ -13,15 +13,15 @@ All visualizations depict the most used keywords taken from YouTube comment sect
 
 ### Girls' Generation - 'Genie' (2010) Bar Chart
 <br><br>
-![alt text here](.../images/SNSDGenieBar.png)
+![alt text here](../images/SNSDGenieBar.png)
 
 ### LOONA - 'Star' (2020) Word Cloud
 <br><br>
-![alt text here](gpowen/images/LoonaStarCloud.png)
+![alt text here](../images/LoonaStarCloud.png)
 
 ### LOONA - 'Star' (2020) Bar Chart
 <br><br>
-![alt text here](gpowen/images/LoonaStarBar.png)
+![alt text here](../images/LoonaStarBar.png)
 
 ### Code
 
