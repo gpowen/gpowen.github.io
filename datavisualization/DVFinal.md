@@ -9,7 +9,7 @@ All visualizations depict the most used keywords taken from YouTube comment sect
 
 ### Girls' Generation - 'Genie' (2010) Word Cloud
 <br><br>
-![alt text here](gpowen.github.io/images/SNSDGenieCloud.png)
+![alt text here](gpowen/images/SNSDGenieCloud.png)
 
 ### Girls' Generation - 'Genie' (2010) Bar Chart
 <br><br>
