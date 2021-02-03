@@ -1,4 +1,4 @@
-# Data Visualization Final Project: YouTube Data Using Tuber
+# Data Visualization Final Project
 
 ## Visualizations
 All visualizations depict the most used keywords taken from YouTube comment sections. 
