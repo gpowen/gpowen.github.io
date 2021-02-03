@@ -4,6 +4,8 @@ title: Works
 permalink: /works/
 ---
 
+[Data Visualization: Final Project](DVFinal.md)
+
 # Data Visualization Final Project: YouTube Data Using Tuber
 
 ## Visualizations
