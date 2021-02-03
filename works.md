@@ -4,8 +4,7 @@ title: Works
 permalink: /works/
 ---
 
-# Data Visualization Final Project
-Ideally would use Shiny here (as seen below, Assignment 7)!
+# Data Visualization Final Project: YouTube Data Using Tuber
 
 ## Visualizations
 All visualizations depict the most used keywords taken from YouTube comment sections. 
