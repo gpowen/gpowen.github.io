@@ -9,11 +9,11 @@ All visualizations depict the most used keywords taken from YouTube comment sect
 
 ### Girls' Generation - 'Genie' (2010) Word Cloud
 <br><br>
-![alt text here](gpowen/images/SNSDGenieCloud.png)
+![alt text here](../images/SNSDGenieCloud.png)
 
 ### Girls' Generation - 'Genie' (2010) Bar Chart
 <br><br>
-![alt text here](gpowen/images/SNSDGenieBar.png)
+![alt text here](.../images/SNSDGenieBar.png)
 
 ### LOONA - 'Star' (2020) Word Cloud
 <br><br>
