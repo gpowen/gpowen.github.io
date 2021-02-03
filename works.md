@@ -10,4 +10,4 @@ permalink: /works/
 
 [Lab 1: Markdown Introduction](Lab01.html)
 
-<a href="Lab01.html">Lab 1</a>
+<a href="Lab01.html">Lab 1 (HTML Link)</a>
