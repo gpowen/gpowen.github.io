@@ -13,4 +13,5 @@ permalink: /works/
 # Knowledge Mining
 
 [Lab 1: Markdown Introduction](knowledgemining/Lab01.html)
+
 [Lab 2: Markdown Debugging](knowledgemining/Lab02.html)
