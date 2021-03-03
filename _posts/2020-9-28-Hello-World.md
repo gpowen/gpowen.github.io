@@ -3,4 +3,10 @@ layout: post
 title: Welcome!
 ---
 
-This is a preliminary layout for me to iterate on. I will be showcasing projects from my graduate program in Social Data Analytics here in addition to my resume (all are currently WIP). 
+Hello! Everything here is currently being iterated on:
+
+Please visit the "Works" tab to view some of my past projects and assignments from my MS in Social Data Analytics and Research. 
+
+Please visit the "About" tab for my contact information. Additionally, my resume has its own tab. 
+
+Thanks for visiting!
