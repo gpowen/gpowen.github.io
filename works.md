@@ -4,12 +4,6 @@ title: Works
 permalink: /works/
 ---
 
-# Data Visualization
-
-[Final Project: YouTube Data and Tuber](datavisualization/DVFinal.md)
-
-[Assignment 7: Working with Shiny](datavisualization/DVA7.md)
-
 # Knowledge Mining
 
 [Lab 1: Markdown Introduction](knowledgemining/Lab01.html)
@@ -19,3 +13,11 @@ permalink: /works/
 [Lab 3: Markdown Continued](knowledgemining/Lab03.html)
 
 [Lab 4: Markdown Exercises](knowledgemining/Lab04.html)
+
+[Assignment 4: Gentle Introduction to Machine Learning](knowledgemining/Assignment4.html)
+
+# Data Visualization
+
+[Final Project: YouTube Data and Tuber](datavisualization/DVFinal.md)
+
+[Working with Shiny](datavisualization/DVA7.md)
