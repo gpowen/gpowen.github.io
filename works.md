@@ -4,10 +4,10 @@ title: Works
 permalink: /works/
 ---
 
-# Knowledge Mining
+## Knowledge Mining
 
 [READ MORE](/km.md)
 
-# Data Visualization
+## Data Visualization
 
 [READ MORE](/dv.md)
