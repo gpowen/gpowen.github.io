@@ -14,7 +14,7 @@ permalink: /works/
 
 [Lab 4: Markdown Exercises](knowledgemining/Lab04.html)
 
-[Assignment 4: Gentle Introduction to Machine Learning](knowledgemining/Assignment4.html)
+[Assignment 4: Gentle Introduction to Machine Learning](knowledgemining/Assignment04.html)
 
 # Data Visualization
 
