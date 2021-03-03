@@ -6,7 +6,7 @@ permalink: /works/
 
 # Knowledge Mining
 
-[READ MORE](../km.md)
+[READ MORE](/km.md)
 
 [Lab 1: Markdown Introduction](knowledgemining/Lab01.html)
 
