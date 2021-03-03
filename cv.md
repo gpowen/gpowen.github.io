@@ -1,11 +1,7 @@
 ---
 layout: page
-title: CV
-permalink: /cv/
+title: Resume
+permalink: /resume/
 ---
 
-CV here later.
-
-### More Information
-
-Blank for now!
+Under construction.
