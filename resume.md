@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume
-permalink: /cv/
+permalink: /resume/
 ---
 
 Under construction.
