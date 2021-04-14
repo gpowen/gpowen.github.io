@@ -4,7 +4,7 @@ title: Knowledge Mining
 permalink: /km/
 ---
 
-# Progress Report 1
+# Progress Report 1: Data
 
 [Data CSV: #MeToo Tweets](knowledgemining/MeToo_tweets.csv)
 
