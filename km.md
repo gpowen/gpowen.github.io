@@ -17,7 +17,13 @@ permalink: /km/
 
 # Progress Report 2: Methods
 
-Due 4/28, TBC
+[R Script: Final Project, still WIP](knowledgemining/KMProj.R)
+
+- Data is cleaned and being used for analysis. Currently still experimenting with methods (you will see some alternative methods that I am exploring in the RScript, primarily concerned with using tidytext rather than the tm package to clean the tweets for stop words, numbers, etc.; A lot of references I have consulted have been using tidytext rather than tm)
+- Using wordcloud2 rather than wordcloud, much better looking
+- Sentiment analysis has been done (!!), matched with the NRC Lexicon (so separates words further into sentiments such as anger, disgust, joy, trust, etc.) 
+- Currently exploring options here for visualization, have a basic frequency bar chart included in the code for now
+- Still WIP, but getting there
 
 ## Labs & Assignments
 
