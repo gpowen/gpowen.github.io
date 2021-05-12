@@ -21,6 +21,10 @@ library(textdata)
 devtools::install_github("lchiffon/wordcloud2")
 # install.packages("ggridges")
 library(ggridges)
+# install.packages("syuzhet")
+# install.packages("SentimentAnalysis")
+library(syuzhet)
+library(SentimentAnalysis)
 
 ## Load in CSV of MeToo Tweets
 
@@ -54,25 +58,64 @@ cleanset <- tm_map(cleanset, stripWhitespace)
 
 tdm <- TermDocumentMatrix(cleanset)
 m <- as.matrix(tdm)
-v <- sort(rowSums(m),decreasing=TRUE) # Memory hangups can occur here if comments are excessive
+v <- sort(rowSums(m),decreasing=TRUE)
 d <- data.frame(word = names(v), freq=v)
 head(d, 50)
 
+# Frequency
+
+top20 <- d %>% slice(1:20) 
+
+ggplot(top20, aes(x=reorder(word, -freq), y=freq)) +
+  geom_bar(fill = "#0073C2FF", stat = "identity") +
+  geom_text(aes(label = freq), vjust = -0.3) + 
+  xlab("Word") +
+  ylab("Frequency") +
+  theme(axis.text=element_text(size=7))
+
 ## Wordcloud2
 
-wordcloud2(data = d)
+wordcloud2(data = top20)
 
-# Experimenting with shape (Not working right now due to bugs.)
+# Cont.
 
-figPath = system.file("FinalProj/Twit.png",package = "wordcloud2")
-wordcloud2(d, figPath = "Twit.png", size = 1.5, color = "skyblue")
+sent <- analyzeSentiment(tdm, language = "english")
+sent <- sent[,1:4]
+sent <- as.data.frame(sent)
+head(sent)
 
-wordcloud2(d, figPath = "Twit.png", size = 1.5, color = "skyblue")
+summary(sent$SentimentGI)
+
+# NRC Emotions
+
+mydf <- data.frame(text = sapply(cleanset, paste, collapse = " "), stringsAsFactors = FALSE)
+
+sent2 <- get_nrc_sentiment(mydf$text)
+
+# Let's look at the corpus as a whole again:
+
+sent3 <- as.data.frame(colSums(sent2))
+names(sent3)[names(sent3) == "colSums(sent2)"] <- "Count"
+sent3$Emotion <- row.names(sent3)
+colnames(sent3)<-c("Count","Emotion")
+ggplot(sent3[1:8,], aes(x = Emotion, y = Count, fill = Emotion)) + geom_bar(stat = "identity") + theme_minimal() + theme(legend.position="none", panel.grid.major = element_blank()) + labs( x = "Emotion", y = "Total Count") + ggtitle("Emotions of #MeToo Tweets According to the NRC Lexicon") + theme(plot.title = element_text(hjust=0.5))
+ggplot(sent3[9:10,], aes(x = Emotion, y = Count, fill = Emotion)) + geom_bar(stat = "identity") + theme_minimal() + theme(legend.position="none", panel.grid.major = element_blank()) + labs( x = "Emotion", y = "Total Count") + ggtitle("Sentiment of #MeToo Tweets According to the NRC Lexicon") + theme(plot.title = element_text(hjust=0.5))
+
+# mydf (cleaned text) into corpus
+
+corp1 <- Corpus(VectorSource(mydf))
+
+nrc_positive <- get_sentiments("nrc") %>%
+  filter(sentiment == "positive")
+
+d %>%
+  inner_join(nrc_positive) %>%
+  count(word, sort = TRUE)
 
 # Tidytext Methods (Alternative)
 
 # Remove http elements
-metootweets$stripped_text <- gsub("http.*","",  metootweets$Tweet)
+metootweets$stripped_text <- gsub("http.*","", metootweets$Tweet)
 metootweets$stripped_text <- gsub("https.*","", metootweets$stripped_text)
 
 # Clean up tweets part 1
@@ -124,7 +167,23 @@ my_stop_words <- tibble(
     "rt",
     "amp",
     "rstats",
-    "gt"
+    "x80",
+    "x806",
+    "x99s",
+    "x9f",
+    "x94",
+    "it2",
+    "gt",
+    "i2",
+    "x9",
+    "x9d",
+    "x99",
+    "x99t",
+    "x99re",
+    "h.i.v2",
+    "yt",
+    "ar2",
+    "x98when"
   ),
   lexicon = "twitter"
 )
@@ -150,7 +209,7 @@ top_words <- cleaned_tweets %>%
   group_by(word) %>%
   tally %>%
   arrange(desc(n)) %>%
-  head(10)
+  head(100)
 
 top_words
 
@@ -170,17 +229,22 @@ cleaned_tweets %>%
 
 # Sentiment matching with NRC Lexicon
 
-nrc_words <- cleaned_tweets %>%
+nrc_words <- top_words %>%
   inner_join(get_sentiments("nrc"), by = "word")
 
 nrc_words 
 
 # Groups and lists words by sentiment according to NRC Lexicon, turn into data frame for visualization
 
-sentiment_df <- nrc_words %>%
+top100sent <- nrc_words %>%
   group_by(sentiment) %>%
   tally %>%
   arrange(desc(n))
+
+ggplot(nrc_words, aes(x = word, y = n, fill = sentiment)) + geom_bar(stat = "identity") + theme_minimal() + theme(legend.position="top", panel.grid.major = element_blank()) + labs( x = "Word", y = "Count", fill = "Sentiment") + ggtitle("Top #MeToo Words by Sentiment") + theme(plot.title = element_text(hjust=0.5))
+
+ggplot(nrc_words, aes(x = reorder(word, -n), y = n, fill = sentiment)) + geom_bar(stat = "identity") + theme_minimal() + theme(legend.position="top", panel.grid.major = element_blank()) + labs( x = "Word", y = "Count", color = "Sentiment") + ggtitle("Top #MeToo Words by Sentiment") + theme(plot.title = element_text(hjust=0.5))
+
 
 ## Sentiment plotting (WIP)
 
