@@ -4,6 +4,13 @@ title: Knowledge Mining
 permalink: /km/
 ---
 
+# Final Project
+
+[Presentation](knowledgemining/KMPresentation.pptx)
+
+[Main Code: Lexicon-Based Approaches](knowledgemining/KMProj.R)
+[Secondary Code: Machine Learning Approaches](knowledgemining/KMCodeV2.R)
+
 # Progress Report 1: Data
 
 [CSV: #MeToo Tweets](knowledgemining/MeToo_tweets.csv)
