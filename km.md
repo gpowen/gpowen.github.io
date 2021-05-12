@@ -6,7 +6,7 @@ permalink: /km/
 
 # Final Project
 
-[Presentation](knowledgemining/KMPresentation.pptx)
+[Project Presentation](knowledgemining/KMPresentation.pptx)
 
 [Main Code: Lexicon-Based Approaches](knowledgemining/KMProj.R)
 
